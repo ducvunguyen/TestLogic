@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<header>
+</header>
+
+<body onload="myFunction()">
+	<p id="mytime"></p>
+	<script>
+		var time = new Date();
+		time.setHours(3);
+		time.setMinutes(20);
+		var mytime;
+		var myhour = time.getHours();
+		var myMunute = time.getMinutes();
+	// console.log(typeof(mymunute));
+	// var dd;
+	function myFunction() {
+		// dd = time.getHours() + ":" + time.getMinutes();
+		// hour();
+		minute();
+		// if (dd === '15:00') {
+		// 	console.log();
+		// }
+		// const unixTimeZero = Date.parse('01 Jan 1970 00:00:00 GMT');
+	  //mytime.getHours() + " - " + mytime.getMinutes() + " - " + mytime.getSeconds();
+
+	}
+	// function hour(){
+	// 	for (var i = myhour ; i <= 23; i++) {
+	// 		mytime = 
+	// 	}
+	// }
+
+	function minute(){
+		for (var i = myMunute; i <= 59; i++) {
+			var count = 60 - myMunute; 
+			if (myMunute === 0) {
+				mytime = myhour + " gio dung ";
+				console.log(mytime);
+			}
+			else if (myMunute > 30) {			
+				mytime = myhour + " Gio kem " + count; 
+				console.log(mytime);
+			}
+			else{
+				mytime = myhour + " Gio hon " + count;
+				console.log(mytime);
+			}
+		}
+	}
+</script>
+
+</body>
+</html>
